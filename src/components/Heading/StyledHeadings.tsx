@@ -81,6 +81,7 @@ const h6Styles = css`
   }
 `;
 
+
 export const StyledHeading1 = styled.h1`
 
     ${commonStyles}

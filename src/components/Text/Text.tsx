@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledParagraph } from "./StyledParagraph";
 import { StyledSpan } from "./StyledSpan";
+import { StyledSmall } from "./StyledSmall";
 
 interface Props {
     children?: React.ReactNode;
@@ -21,7 +22,7 @@ export const Text: React.FC<Props> = (
         <>
             { variant === 'p' && <StyledParagraph {...props}>{children || label}</StyledParagraph> }
             { variant === 'span' && <StyledSpan {...props}>{children || label}</StyledSpan> }
-            { variant === 'small' && <small {...props}>{children || label}</small> }
+            { variant === 'small' && <StyledSmall {...props}>{children || label}</StyledSmall> }
             { variant === 'strong' && <strong {...props}>{children || label}</strong> }
         </>
     )
