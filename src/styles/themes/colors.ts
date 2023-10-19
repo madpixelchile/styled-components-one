@@ -5,8 +5,12 @@ export const colors = {
     secondary: '#6c757d',
     success: '#28a745',
 
+    ['text-body']: '#222',
+
     ['btn-primary']: '#eaeaea',
-    ['btn-primary-hover']: '#444'
+    ['btn-primary-hover']: '#444',
+
+    ['color-link']: '#007bff'
 }
 
 export default colors;
