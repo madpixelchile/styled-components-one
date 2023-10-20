@@ -13,7 +13,7 @@ export const ComponentList = () => {
 
                 <Row>
 
-                    <Col className="col-md-6">
+                    <Col className={'col-md-8'}>
                         <Heading variant={'h1'}>Esto es un título</Heading>
                         <Heading variant={'h1'} size={'h2'}>Esto es un título</Heading>
                         <Heading variant={'h1'} size={'h3'}>Esto es un título</Heading>

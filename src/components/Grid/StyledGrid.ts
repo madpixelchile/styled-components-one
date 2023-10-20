@@ -1,6 +1,6 @@
 
 import styled from "styled-components";
-// import breakpoints from "../../styles/themes/breakpoints";
+import breakpoints from "../../styles/themes/breakpoints";
 
 const gutters = {
     ['gutter-small']:  '8px',
@@ -17,12 +17,12 @@ export const StyledGrid = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${breakpoints["screen-md"]}) {
     padding-right: ${gutters["gutter-medium"]};
     padding-left: ${gutters["gutter-medium"]};
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
     padding-right: ${gutters["gutter-large"]};
     padding-left: ${gutters["gutter-large"]};
   }
@@ -30,7 +30,7 @@ export const StyledGrid = styled.div`
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: ${breakpoints["screen-md"]}) {
   &.container {
     max-width: 748px;
 
@@ -59,7 +59,7 @@ export const StyledGrid = styled.div`
 }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: ${breakpoints["screen-lg"]}) {
   &.container {
     max-width: 972px;
 
@@ -86,7 +86,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: ${breakpoints["screen-xl"]}) {
   &.container {
     max-width: 1168px;
 
@@ -109,7 +109,7 @@ export const StyledGrid = styled.div`
 }
 
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: ${breakpoints["screen-xxl"]}) {
   &.container {
     max-width: 1368px;
   }
@@ -123,12 +123,12 @@ export const StyledGrid = styled.div`
   margin-right: auto;
   margin-left: auto;
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${breakpoints["screen-md"]}) {
     padding-right: ${gutters["gutter-medium"]};
     padding-left: ${gutters["gutter-medium"]};
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
     padding-right: ${gutters["gutter-large"]};
     padding-left: ${gutters["gutter-large"]};
   }
@@ -142,12 +142,12 @@ export const StyledGrid = styled.div`
   margin-right: -${gutters["gutter-small"]};
   margin-left: -${gutters["gutter-small"]};
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${breakpoints["screen-md"]}) {
     margin-right: -${gutters["gutter-medium"]};
     margin-left: -${gutters["gutter-medium"]};
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
     margin-right: -${gutters["gutter-large"]};
     margin-left: -${gutters["gutter-large"]};
   }
@@ -245,12 +245,12 @@ export const StyledGrid = styled.div`
   padding-right: ${gutters["gutter-small"]};
   padding-left: ${gutters["gutter-small"]};
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: ${breakpoints["screen-md"]}) {
     padding-right: ${gutters["gutter-medium"]};
     padding-left: ${gutters["gutter-medium"]};
   }
 
-  @media only screen and (min-width: 992px) {
+  @media only screen and (min-width: ${breakpoints["screen-lg"]}) {
     padding-right: ${gutters["gutter-large"]};
     padding-left: ${gutters["gutter-large"]};
   }
@@ -674,7 +674,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: ${breakpoints["screen-md"]}) {
   &.col-md {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -886,7 +886,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: ${breakpoints["screen-lg"]}) {
   &.col-lg {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1098,7 +1098,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: ${breakpoints["screen-xl"]}) {
   &.col-xl {
     -ms-flex-preferred-size: 0;
     flex-basis: 0;
@@ -1389,7 +1389,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: ${breakpoints["screen-md"]}) {
   &.d-md-none {
     display: none !important;
   }
@@ -1429,7 +1429,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: ${breakpoints["screen-lg"]}) {
   &.d-lg-none {
     display: none !important;
   }
@@ -1469,7 +1469,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: ${breakpoints["screen-xl"]}) {
   &.d-xl-none {
     display: none !important;
   }
@@ -1891,7 +1891,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: ${breakpoints["screen-md"]}) {
   &.flex-md-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -2063,7 +2063,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: ${breakpoints["screen-lg"]}) {
   &.flex-lg-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -2235,7 +2235,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: ${breakpoints["screen-xl"]}) {
   &.flex-xl-row {
     -ms-flex-direction: row !important;
     flex-direction: row !important;
@@ -3273,7 +3273,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: ${breakpoints["screen-md"]}) {
   &.m-md-0 {
     margin: 0 !important;
   }
@@ -3707,7 +3707,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: ${breakpoints["screen-lg"]}) {
   &.m-lg-0 {
     margin: 0 !important;
   }
@@ -4141,7 +4141,7 @@ export const StyledGrid = styled.div`
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: ${breakpoints["screen-xl"]}) {
   &.m-xl-0 {
     margin: 0 !important;
   }
