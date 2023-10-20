@@ -8,6 +8,17 @@ export const StyledThemeProvider = createGlobalStyle`
 
     ${StyledReset}
 
+    html {
+        box-sizing: border-box;
+        -ms-overflow-style: scrollbar;
+    }
+
+    *,
+        *::before,
+        *::after {
+        box-sizing: inherit;
+    }
+
     body {
         font-family: ${fontConfig['font-family-base']};
         text-rendering: geometricPrecision;
@@ -19,6 +30,7 @@ export const StyledThemeProvider = createGlobalStyle`
         font-size: ${fontConfig['font-size-base']};
         /* font-weight: $font-weight-regular; */
         line-height: ${fontConfig['line-height-base']};
+
     }
   
 `
